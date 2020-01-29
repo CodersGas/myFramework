@@ -458,17 +458,16 @@ nav li:hover {
 
 /*before footer*/
 .before-footer {
-  margin: 0 auto;
-  margin: 20px;
+  margin: 20px auto;
 }
 .before-footer .row .content {
-  border-radius: 5px;
   margin: 0 auto;
-  background-image: url(/assets/images/slideshow-images/image3.jpg);
+  border-radius: 5px;
+  background-image: url(file:///W:/work/web-development/Projects/framework/assets/images/slideshow-images/image5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
-  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
 }
 .before-footer .row .content img {
   position: absolute;
@@ -540,7 +539,6 @@ nav li:hover {
 }
 .page-footer .lower section ul li {
   padding: 5px;
-  border-right: 1px solid grey;
 }
 .page-footer .lower section ul li:hover {
   cursor: pointer;

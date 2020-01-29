@@ -550,15 +550,15 @@ $nav_hover_color: rgba(221, 232, 236, 0.3);
 
 /*before footer*/
 @mixin before-footer-mixin(){
-    & .row{ 
-        .content{
-            border-radius: 5px;
+    margin: 20px auto;
+    & .row .content{
             margin: 0 auto;
-            background-image: url(/assets/images/slideshow-images/image3.jpg);
+            border-radius: 5px;
+            background-image: url(file:///W:/work/web-development/Projects/framework/assets/images/slideshow-images/image5.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             height: 400px;
-            background-color: rgba(0, 0, 0, 0.8);
+            position: relative;
 
         img{
             position: absolute;
@@ -579,11 +579,9 @@ $nav_hover_color: rgba(221, 232, 236, 0.3);
         }
     }
 }  
-}
+
 
 .before-footer{
-    margin: 0 auto;
-    margin: 20px;
     @include before-footer-mixin();
 }
 
@@ -650,7 +648,6 @@ $nav_hover_color: rgba(221, 232, 236, 0.3);
 
                 li{
                     padding: 5px;
-                    border-right: 1px solid grey;
                 }
 
                 li:hover{@include footer-li-hover();}
@@ -663,7 +660,7 @@ $nav_hover_color: rgba(221, 232, 236, 0.3);
     }
 
     @media only screen and (max-width: 768px){
-        .upper{
+        & .upper{
             padding:10px 0 10px 0;
         }
 
